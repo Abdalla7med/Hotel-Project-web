@@ -1,0 +1,15 @@
+:root{
+    --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.landing{
+    background-image: url(../imgs/hotel-1831072_1280.jpg);
+    background-size: 100% 100% ;
+    min-height: calc(100vh - 72px);
+}

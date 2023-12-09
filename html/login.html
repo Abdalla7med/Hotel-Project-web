@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/hotel.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../imgs/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="../index.html#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2  p-lg-3" href="reserve.html">Reserve Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2  p-lg-3" href="../index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="../index.html#contact">Contact</a>
+              </li>
+            </ul>
+           <a class="btn  rounded-pill main-btn" href="register.html" >Register</a>
+          </div>
+        </div>
+      </nav>
+<div class="vh-100 gradient-custom">
+    <div class="container py-5 h-100 opacity-75 ">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body text-center">
+  
+              <div class="mb-md-2 mt-md-2 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                <p class="text-white-50 mb-5">Please enter your Email and Password!</p>
+  
+                <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="typeEmailX">Email</label>
+                  <input type="email" id="typeEmailX"  required>
+                   
+                </div>
+  
+                <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="typePasswordX">Password</label>
+                  <input type="password" id="typePasswordX" required minlength="8" >
+                </div>
+                
+  
+                <p class="small mb-5 pb-lg-2"><a  class="Forgot" href="#!">Forgot password?</a></p>
+  
+                <input type="submit" value="Login" class="btn btn-outline-info btn-lg px-5 rounded-pill">
+
+                <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                  <a href="#" class="icoFacebook"> <i class="fab fa-facebook-f"></i></a>
+                  <a href="#!" class="icoTwitter"> <i class="fab fa-twitter"></i></a>
+                  <a href="#!" class="icoGoogle"> <i class="fab fa-google-plus"></i></a>
+                </div>
+  
+              </div>
+  
+              <div>
+                <p class="mb-0">Don't have an account? <a  class="signup" class="fw-bold btn" href="register.html">Sign Up</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="../js/all.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

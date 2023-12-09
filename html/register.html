@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/hotel.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Open+Sans:wght@400;700&family=Roboto:wght@100;300;500&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../imgs/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="../index.html#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2  p-lg-3" href="reserve.html">Reserve Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2  p-lg-3" href="../index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="../index.html#contact">Contact</a>
+              </li>
+            </ul>
+           <a class="btn  rounded-pill main-btn" href="login.html" >Login</a>
+          </div>
+        </div>
+      </nav>
+      <div class="landing d-flex justify-content-center align-items-center">
+       <div class="container bg-light col-8 col-lg-3  p-4 rounded opacity-75  ">
+        <form action="###" method="post" >
+          <div class="row">
+            <div class="form-floating mb-3 col-md-6">
+              <input type="text" class="form-control" id="floatingInput" placeholder="First Name" required>
+              <label for="floatingInput" class="ms-2"> First Name</label>
+            </div>
+            <div class="form-floating mb-3 col-md-6">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Last Name" required>
+              <label for="floatingInput" class="ms-2">Last Name</label>
+            </div>
+          </div>
+          
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com" required>
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required minlength="8">
+            <label for="floatingPassword" >Password</label>
+            <small class="form-text text-muted">*password must be greater than 8 characters</small>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control " id="floatingInput" placeholder="" required>
+            <label for="floatingInput">Phone Number</label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="Sex" id="flexRadioDefault1"checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+              Male
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="Sex" id="flexRadioDefault2" >
+            <label class="form-check-label" for="flexRadioDefault2">
+              Female
+            </label>
+          </div>
+          <input type="submit" value="Sign Up" class="btn  rounded-pill main-btn" >
+         
+        </form>
+       </div>
+      </div>
+      
+    <script src="../js/all.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

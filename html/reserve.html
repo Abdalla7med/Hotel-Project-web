@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Booking Form</title>
+    <title>Hotel</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/reserve.css">
+    <link rel="stylesheet" href="../css/hotel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Open+Sans:wght@400;700&family=Roboto:wght@100;300;500&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      .btn-primary {
+          background: transparent;
+          margin-top: 20px;
+          width: 150px;
+          color: white ;
+          font-weight: bold ;
+          border: red ;
+          background-color: red;
+          cursor: pointer;
+      }
+      .btn-primary:hover {
+          background-color: darkred; 
+      }
+      .btn-primary:active {
+          background-color: darkred;
+     }
+     .input-group input::placeholder {
+          color: #333;
+     }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../imgs/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="../index.html #services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2  p-lg-3" href="#">Reserve Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2  p-lg-3" href="../index.html #about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="../index.html#contact">Contact</a>
+              </li>
+            </ul>
+           <a class="btn  rounded-pill main-btn" href="login.html" >Login</a>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="container">
+        <div class="container">
+            <form class="form-group">
+                <div id="form-container">
+                    <h1 class="text-white text-center">ROOM RESERVATION</h1>
+    
+                    <div class="form-group">
+                        <div class="input-group">
+                            <i class="fa fa-user p-2" aria-hidden="true" style="color: red;"></i>
+                            <input type="text" class="" placeholder="Name">
+                        </div>
+    
+                        <div class="input-group">
+                            <i class="fa fa-phone p-2" aria-hidden="true" style="color: red;"></i>
+                            <input type="number" class="input" placeholder="Phone Number">
+                        </div>
+    
+                        <div class="input-group">
+                            <i class="fa fa-calendar p-2" aria-hidden="true" style="color: red;"></i>
+                            <input type="text" class="input" placeholder="Arrival Date" onfocus="(this.type='Date')">
+                        </div>
+    
+                        <div class="input-group">
+                            <i class="fa fa-users p-2" style="color: red" aria-hidden="true"></i>
+                            <select class="input" aria-hidden="true">
+                                <option value="">No.Of Guests</option>
+                                <option value="">1-3</option>
+                                <option value="">4-7</option>
+                                <option value="">7-10</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <div class="input-group">
+                            <i class="fa fa-user p-2" aria-hidden="true" style="color: red;"></i>
+                            <input type="text" class="input" placeholder="National ID">
+                        </div>
+    
+                        <div class="input-group">
+                          <i class="fa-solid fa-envelope p-2" style="color: red"></i>
+                            <input type="email" class="input" placeholder="Email">
+                        </div>
+    
+                        <div class="input-group">
+                            <i class="fa fa-calendar p-2" aria-hidden="true" style="color: red;"></i>
+                            <input type="text" class="input" placeholder="Departure Date" onfocus="(this.type='Date')"">
+                        </div>
+    
+                        <div class="input-group">
+                            <i class="fa fa-users p-2" aria-hidden="true" style="color: red"></i>
+                            <select class="input" aria-hidden="true">
+                                <option value="">Room Type</option>
+                                <option value="">Standard Room</option>
+                                <option value="">Deluxe Room</option>
+                                <option value="">Single Bed</option>
+                                <option value="">Double Bed</option>
+                                <option value="">Suite</option>
+                                <option value="">Honeymoon Suite</option>
+                                <option value="">Penthouse Suite</option>
+                            </select>
+                        </div>
+                    </div>
+                    <span style="margin: 8px;">Please Choose The Services You Want : </span>
+                    <div class="customCheckBoxHolder">
+                        <input class="customCheckBoxInput" id="cCB1" type="checkbox">
+                        <label class="customCheckBoxWrapper" for="cCB1">
+                            <div class="customCheckBox">
+                                <div class="inner">POOL</div>
+                            </div>
+                        </label>
+                    
+                        <input class="customCheckBoxInput" id="cCB2" type="checkbox">
+                        <label class="customCheckBoxWrapper" for="cCB2">
+                            <div class="customCheckBox">
+                                <div class="inner">Old-Fashioned Rooms</div>
+                            </div>
+                        </label>
+                    
+                        <input class="customCheckBoxInput" id="cCB3" type="checkbox">
+                        <label class="customCheckBoxWrapper" for="cCB3">
+                            <div class="customCheckBox">
+                                <div class="inner">luxury-Rooms</div>
+                            </div>
+                        </label>
+    
+                        <input class="customCheckBoxInput" id="cCB4" type="checkbox">
+                        <label class="customCheckBoxWrapper" for="cCB4">
+                            <div class="customCheckBox">
+                                <div class="inner">GYM</div>
+                            </div>
+                        </label>
+    
+                        <input class="customCheckBoxInput" id="cCB5" type="checkbox">
+                        <label class="customCheckBoxWrapper" for="cCB5">
+                            <div class="customCheckBox">
+                                <div class="inner">SPA</div>
+                            </div>
+                        </label>
+    
+                        <input class="customCheckBoxInput" id="cCB6" type="checkbox">
+                        <label class="customCheckBoxWrapper" for="cCB6">
+                            <div class="customCheckBox">
+                                <div class="inner">GOLF</div>
+                            </div>
+                        </label>
+    
+                        <input class="customCheckBoxInput" id="cCB7" type="checkbox">
+                        <label class="customCheckBoxWrapper" for="cCB7">
+                            <div class="customCheckBox">
+                                <div class="inner">BOATS</div>
+                            </div>
+                        </label>
+    
+                        <input class="customCheckBoxInput" id="cCB8" type="checkbox">
+                        <label class="customCheckBoxWrapper" for="cCB8">
+                            <div class="customCheckBox">
+                                <div class="inner">RESTAURANTS</div>
+                            </div>
+                        </label>
+                    </div>
+                    <a href="../imgs/Bill.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Reserve Now</button>
+                    </a>
+                    <a href="Checkout.html" target="_blank">
+                        <button type="button" class="btn btn-primary">Pay with card</button>
+                    </a>
+                 </div>
+            </div>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>

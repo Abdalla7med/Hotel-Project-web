@@ -1,0 +1,93 @@
+.gradient-custom {
+    background-image: url(../imgs/login.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.gradient-custom input[type="email"],
+.gradient-custom input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.gradient-custom input[type="email"]:hover,
+.gradient-custom input[type="password"]:hover {
+    width: 300px;
+    border-color: #2ecc71
+}
+
+.gradient-custom a.Forgot:link,.gradient-custom a.Forgot:visited{
+    color: white;
+}
+
+.gradient-custom a.Forgot:hover{
+    color: #2ecc71 ;
+}
+
+.gradient-custom a
+{
+    display: inline;
+    margin: 0 30px;
+}
+
+.gradient-custom a.icoFacebook {
+    color: white
+}
+
+.gradient-custom a.icoGoogle {
+    color: white
+}
+
+.gradient-custom a.icoTwitter {
+    color: white
+}
+
+
+.gradient-custom a.icoFacebook:hover {
+    color: #3B5998
+}
+
+.gradient-custom a.icoGoogle:hover {
+    color: #BD3518
+}
+
+.gradient-custom a.icoTwitter:hover {
+    color: #33ccff
+}
+
+
+.gradient-custom i 
+{
+    line-height: 50px;
+    text-align: center
+}
+
+
+
+.gradient-custom i
+{
+    color: #fff;
+    transition: all 0.8s;
+    transition: all 0.8s
+}
+
+.gradient-custom a.signup:link,.gradient-custom a.signup:visited{
+    color:white;
+}
+
+.gradient-custom a.signup:hover{
+    color:#2ecc71;
+}
+
+
+
